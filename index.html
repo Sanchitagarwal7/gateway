@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Razorpay Payment</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="payment-container">
+    <div class="payment-card">
+      <h1>Pay to Sanchit Agarwal</h1>
+      
+      <div class="payment-form">
+        <div class="input-group">
+          <label for="amount">Amount (INR):</label>
+          <input 
+            type="number" 
+            id="amount" 
+            name="amount" 
+            placeholder="Enter amount" 
+            required 
+          />
+        </div>
+        
+        <button class="pay-button" onclick="payNow()">
+          Pay Now
+        </button>
+      </div>
+
+      <div class="security-info">
+        <p>🔒 Secure Payment Gateway</p>
+        <p>💳 Multiple Payment Options</p>
+      </div>
+
+      <div class="powered-by">
+        Powered by Razorpay
+      </div>
+    </div>
+  </div>
+
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="/pay.js"></script>
+</body>
+</html>
