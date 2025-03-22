@@ -19,7 +19,7 @@ async function payNow() {
     key: RAZORPAY_ID,
     amount: order.amount,
     currency: order.currency,
-    name: 'Sanchit',
+    name: 'null',
     description: 'Transaction',
     order_id: order.id, // This is the order_id created in the backend
     callback_url: 'http://localhost:3000/payment-success', // Your success URL
