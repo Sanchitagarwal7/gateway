@@ -24,9 +24,9 @@ async function payNow() {
     order_id: order.id, // This is the order_id created in the backend
     callback_url: 'http://localhost:3000/payment-success', // Your success URL
     prefill: {
-      name: 'Sanchit',
-      email: 'sanchita.g893@gmail.com',
-      contact: '6397462335'
+      name: null,
+      email: null,
+      contact: null
     },
     theme: {
       color: '#F37254'
